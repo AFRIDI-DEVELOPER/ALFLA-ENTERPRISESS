@@ -125,7 +125,7 @@ const Hero = () => {
                 <div className="hero-banner-bg">
                     <div className="hero-banner-overlay" />
                     <img
-                        src={`${import.meta.env.BASE_URL}hero-banner.png`}
+                        src={`${import.meta.env.BASE_URL || '/'}hero-banner.png`.replace(/\/+/g, '/')}
                         alt="Electrical Substation Panorama"
                         className="hero-banner-img"
                     />

@@ -6,6 +6,24 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    const scrollToSection = (e, href) => {
+        if (href.startsWith('#/')) {
+            const id = href.split('#/')[1]?.replace('#', '');
+            if (id) {
+                e.preventDefault();
+                const element = document.getElementById(id);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                } else if (window.location.hash !== '#/') {
+                    window.location.hash = '#/';
+                    setTimeout(() => {
+                        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                }
+            }
+        }
+    };
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
@@ -35,6 +53,7 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
+                            onClick={(e) => scrollToSection(e, link.href)}
                             className="nav-link"
                         >
                             {link.name}
@@ -60,7 +79,10 @@ const Navbar = () => {
                             key={link.name}
                             href={link.href}
                             className="text-lg font-medium text-gray-300 hover:text-green-400"
-                            onClick={() => setIsMobileMenuOpen(false)}
+                            onClick={(e) => {
+                                scrollToSection(e, link.href);
+                                setIsMobileMenuOpen(false);
+                            }}
                         >
                             {link.name}
                         </a>
