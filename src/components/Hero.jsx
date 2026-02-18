@@ -125,7 +125,7 @@ const Hero = () => {
                 <div className="hero-banner-bg">
                     <div className="hero-banner-overlay" />
                     <img
-                        src="hero-banner.png"
+                        src={`${import.meta.env.BASE_URL}hero-banner.png`}
                         alt="Electrical Substation Panorama"
                         className="hero-banner-img"
                     />
@@ -170,11 +170,11 @@ const Hero = () => {
                             transition={{ delay: 0.4 }}
                             className="flex flex-col md:flex-row justify-center items-center gap-6 hero-buttons"
                         >
-                            <a href="#services" className="btn btn-primary px-12 py-5 text-xl rounded-2xl group shadow-lg shadow-green-500/20">
+                            <a href="#/#services" className="btn btn-primary px-12 py-5 text-xl rounded-2xl group shadow-lg shadow-green-500/20">
                                 Our Services
                                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
                             </a>
-                            <a href="#about" className="btn btn-outline px-12 py-5 text-xl rounded-2xl backdrop-blur-md border-white/20 hover:border-green-400">
+                            <a href="#/#about" className="btn btn-outline px-12 py-5 text-xl rounded-2xl backdrop-blur-md border-white/20 hover:border-green-400">
                                 Learn More
                             </a>
                         </motion.div>

@@ -12,7 +12,7 @@ const Team = () => {
             position: 'Proprietor',
             phone: '+91 98122-19432',
             description: 'Founder and proprietor of Alfala Enterprises, leading the company with strategic vision and commitment to excellence in electrical infrastructure solutions.',
-            image: 'team-images/team_manager_portrait_1771058549873.png'
+            image: `${import.meta.env.BASE_URL}team-images/team_manager_portrait_1771058549873.png`
         },
         {
             id: 2,
@@ -20,7 +20,7 @@ const Team = () => {
             position: 'Manager',
             phone: '+91 96713-70592',
             description: 'Managing daily operations and client relationships, ensuring seamless project execution and maintaining the highest standards of quality and service.',
-            image: 'team-images/team_engineer_portrait_1771058571065.png'
+            image: `${import.meta.env.BASE_URL}team-images/team_engineer_portrait_1771058571065.png`
         },
         {
             id: 3,
@@ -28,7 +28,7 @@ const Team = () => {
             position: 'Second Manager',
             phone: '+91 90505-38554',
             description: 'Supporting management operations and coordinating between teams to ensure efficient workflow and successful project delivery across all departments.',
-            image: 'team-images/team_technician_portrait_1771058590865.png'
+            image: `${import.meta.env.BASE_URL}team-images/team_technician_portrait_1771058590865.png`
         },
         {
             id: 4,
@@ -36,7 +36,7 @@ const Team = () => {
             position: 'Supervisor',
             phone: '+91 89882-02773',
             description: 'Overseeing field operations and technical teams, ensuring safety compliance and quality standards are maintained at all project sites.',
-            image: 'team-images/team_consultant_portrait_1771058630997.png'
+            image: `${import.meta.env.BASE_URL}team-images/team_consultant_portrait_1771058630997.png`
         },
         {
             id: 5,
@@ -44,7 +44,7 @@ const Team = () => {
             position: 'Foreman',
             phone: '+91 99913-33855',
             description: 'Leading on-ground execution teams, managing installation work, and ensuring timely completion of projects with precision and expertise.',
-            image: 'team-images/team_coordinator_portrait_1771058681491.png'
+            image: `${import.meta.env.BASE_URL}team-images/team_coordinator_portrait_1771058681491.png`
         }
     ];
 
