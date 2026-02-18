@@ -43,7 +43,7 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-6">
-                            <a href="/#contact" className="px-10 py-5 bg-green-500 text-black font-black rounded-2xl hover:bg-green-400 transition-all shadow-xl shadow-green-500/20 flex items-center gap-2 text-lg">
+                            <a href="#contact" className="px-10 py-5 bg-green-500 text-black font-black rounded-2xl hover:bg-green-400 transition-all shadow-xl shadow-green-500/20 flex items-center gap-2 text-lg">
                                 Get Free Consultancy <ChevronRight size={20} />
                             </a>
                             <a href="tel:9812219432" className="px-10 py-5 bg-white/5 border border-white/10 text-white font-bold rounded-2xl hover:bg-white/10 transition-all flex items-center gap-2 text-lg backdrop-blur-md">
@@ -84,10 +84,10 @@ const Footer = () => {
                         <h4 className="footer-section-title">Navigation</h4>
                         <ul>
                             <li><Link to="/">Home</Link></li>
-                            <li><a href="/#about">About Us</a></li>
-                            <li><a href="/#services">Services</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
                             <li><Link to="/instruments">Instruments</Link></li>
-                            <li><a href="/#contact">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>

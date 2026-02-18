@@ -56,14 +56,14 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden glass absolute top-full left-0 w-full p-6 flex flex-col gap-4 animate-in slide-in-from-top duration-300">
                     {navLinks.map((link) => (
-                        <Link
+                        <a
                             key={link.name}
-                            to={link.href}
+                            href={link.href}
                             className="text-lg font-medium text-gray-300 hover:text-green-400"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             {link.name}
-                        </Link>
+                        </a>
                     ))}
                     <Link
                         to="/instruments"
