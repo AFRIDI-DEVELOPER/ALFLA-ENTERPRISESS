@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -8,6 +8,7 @@ import Clients from './components/Clients'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Instruments from './components/Instruments'
+
 const TaglineBar = () => {
     const texts = [
         '⚡ A Complete Solution to Power',
@@ -60,7 +61,7 @@ const Home = () => (
 
 function App() {
     return (
-        <Router basename={import.meta.env.BASE_URL}>
+        <Router>
             <ScrollToTop />
             <div className="app">
                 <Navbar />

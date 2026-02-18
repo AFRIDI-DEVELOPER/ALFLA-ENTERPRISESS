@@ -89,7 +89,7 @@ const Instruments = () => {
                 "Modification of Old Control Transformers",
                 "Structural Reinforcement & Painting"
             ],
-            image: "/transformer_blueprint.png",
+            image: "transformer_blueprint.png",
             imageAlt: "Substation Blueprint",
             icon: Factory,
             specs: [
@@ -109,7 +109,7 @@ const Instruments = () => {
                 "On Line Partial Discharge (PD) Tracking",
                 "Winding Resistance Measurement"
             ],
-            image: "/circuit_breaker_blueprint.png",
+            image: "circuit_breaker_blueprint.png",
             imageAlt: "High-Voltage Testing Blueprint",
             icon: Activity,
             reverse: true,
@@ -129,7 +129,7 @@ const Instruments = () => {
                 "Tan Delta & Capacitance Level",
                 "Insulation Resistance (HV-LV)"
             ],
-            image: "/instrument_transformer_blueprint.png",
+            image: "instrument_transformer_blueprint.png",
             imageAlt: "CT/PT Testing Blueprint",
             icon: Microchip,
             stats: [
@@ -148,7 +148,7 @@ const Instruments = () => {
                 "Isolator Contact Alignment Check",
                 "Mechanical Endurance Verification"
             ],
-            image: "/circuit_breaker_diagnostic.png",
+            image: "circuit_breaker_diagnostic.png",
             imageAlt: "Switchgear Diagnostic Blueprint",
             icon: Zap,
             reverse: true,
@@ -168,7 +168,7 @@ const Instruments = () => {
                 "Operational Interlock Logic Test",
                 "Under/Over Voltage Trip Settings"
             ],
-            image: "/protection_relay_blueprint.png",
+            image: "protection_relay_blueprint.png",
             imageAlt: "Relay Calibration Blueprint",
             icon: Shield,
             stats: [
@@ -187,7 +187,7 @@ const Instruments = () => {
                 "LV/HV Connection Thermal Profiles",
                 "Periodic Load-based Reporting"
             ],
-            image: "/thermal_analysis.png",
+            image: "thermal_analysis.png",
             imageAlt: "Thermal Analysis Diagnostics",
             icon: Camera,
             reverse: true,

@@ -125,7 +125,7 @@ const Hero = () => {
                 <div className="hero-banner-bg">
                     <div className="hero-banner-overlay" />
                     <img
-                        src="/hero-banner.png"
+                        src="hero-banner.png"
                         alt="Electrical Substation Panorama"
                         className="hero-banner-img"
                     />
