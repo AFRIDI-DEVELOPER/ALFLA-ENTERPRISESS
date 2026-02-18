@@ -83,7 +83,20 @@ const Footer = () => {
                     <div className="footer-link-group">
                         <h4 className="footer-section-title">Navigation</h4>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
+                            <li>
+                                <a
+                                    href="#/"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                                        if (window.location.hash !== '#/') {
+                                            window.location.hash = '#/';
+                                        }
+                                    }}
+                                >
+                                    Home
+                                </a>
+                            </li>
                             <li><a href="#/#about">About Us</a></li>
                             <li><a href="#/#services">Services</a></li>
                             <li><Link to="/instruments">Instruments</Link></li>

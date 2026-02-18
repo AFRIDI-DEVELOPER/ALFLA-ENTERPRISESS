@@ -9,8 +9,8 @@ const Navbar = () => {
     const scrollToSection = (e, href) => {
         if (href.startsWith('#/')) {
             const id = href.split('#/')[1]?.replace('#', '');
+            e.preventDefault();
             if (id) {
-                e.preventDefault();
                 const element = document.getElementById(id);
                 if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
@@ -19,6 +19,12 @@ const Navbar = () => {
                     setTimeout(() => {
                         document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
                     }, 100);
+                }
+            } else {
+                // Scroll to top for Home
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                if (window.location.hash !== '#/') {
+                    window.location.hash = '#/';
                 }
             }
         }
@@ -43,9 +49,15 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 glass ${isScrolled ? 'py-3 shadow-lg' : 'py-4'}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.36)' }}>
             <div className="container flex justify-between items-center">
-                <h1 className="text-xl font-bold tracking-tight leading-tight" style={{ color: '#FFFFFF' }}>
-                    ALFALA <span style={{ color: '#22C55E' }}>ENTERPRISES</span>
-                </h1>
+                <a
+                    href="#/"
+                    onClick={(e) => scrollToSection(e, '#/')}
+                    className="cursor-pointer hover:opacity-80 transition-opacity"
+                >
+                    <h1 className="text-xl font-bold tracking-tight leading-tight" style={{ color: '#FFFFFF' }}>
+                        ALFALA <span style={{ color: '#22C55E' }}>ENTERPRISES</span>
+                    </h1>
+                </a>
 
                 {/* Desktop Menu */}
                 <div className="hidden md:flex items-center gap-8">
